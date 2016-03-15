@@ -28,5 +28,11 @@ class FacelessMan {
 
 var aMan = new FacelessMan(`Jaqen H'ghar`);
 
+//-----------------------------
 
-// var aMan = new FacelessMan;
+class Lion extends Cat {
+  constructor(size) {
+    super();
+    this.size = 'BIG';
+  }
+}
