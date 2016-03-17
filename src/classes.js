@@ -7,7 +7,7 @@ class Foo {
 var bar = new Foo;
 
 class Dog {
-  constructor(says) {
+  constructor() {
     this.says = 'life is ruff';
   }
 };
@@ -18,7 +18,7 @@ class Cat {
   }
 };
 
-var garfield = new Cat;
+var garfield = new Cat();
 
 class FacelessMan {
   constructor(name) {
@@ -56,7 +56,7 @@ class Key {
 class Safe {
   constructor(secret, key) {
     this.unlock = function (lockpick) {
-      if (lockpick == key) {
+      if (lockpick === key) {
         return secret
       }
     }
